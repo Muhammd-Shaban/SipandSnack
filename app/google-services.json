@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "800364102189",
+    "firebase_url": "https://sipnsnack-3bf14-default-rtdb.firebaseio.com",
+    "project_id": "sipnsnack-3bf14",
+    "storage_bucket": "sipnsnack-3bf14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800364102189:android:0401bcec13cc182d83eea4",
+        "android_client_info": {
+          "package_name": "com.cust.sipnsnack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800364102189-rvs7m2g7c0e0p5v93dfeb2erjphfh090.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cust.sipnsnack",
+            "certificate_hash": "9e91e3087c9d6e8cfab8479e1ab0969277df27dd"
+          }
+        },
+        {
+          "client_id": "800364102189-9a2h91ckf8acgrp8a64dfvjbrkh05tqj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhTl_1o4gsAAAnaL_DbqifcC8nOKbw7Gg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800364102189-9a2h91ckf8acgrp8a64dfvjbrkh05tqj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

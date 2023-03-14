@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/silver"
+    tools:context="com.cust.sipnsnack.SendEmail">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/backBTN"
+            android:src="@drawable/back_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="left"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/backBTN"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp">
+
+
+            <RelativeLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/purple"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/engTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:text="VERIFY EMAIL"
+                    android:textColor="@color/lavender_blush"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/engTV"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="(ای میل کی تصدیق کریں)"
+                    android:textColor="@color/lavender_blush"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/infoiconIV"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ic_info" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/emailTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="abc@yahoo.com"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/biorhyme_bold"/>
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Email is not Verified ..."
+                android:textColor="@color/red"
+                android:textSize="23sp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="(ای میل تصدیق شدہ نہیں ہے ...)"
+                android:textColor="@color/red"
+                android:textSize="23sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <Button
+                android:id="@+id/verifyEmail"
+                android:layout_width="250dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="80dp"
+                android:backgroundTint="@color/green"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/silver"
+                android:paddingLeft="20dp"
+                android:textSize="21sp"
+                android:paddingRight="20dp"
+                android:text="VERIFY"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sipnsnack">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SipnSnack">
+        <activity android:name="com.cust.sipnsnack.ManagerDashboard.Test">
+
+        </activity>
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.LocationByDirection"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.TrackOrderByDirections"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.TrackOrderByAddress"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.cust.sipnsnack.Bikers.BikersStars" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.TrackOrderLocation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.TrackOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.LocationOfAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.ShareLiveLocation"
+            android:screenOrientation="portrait" />
+
+        <!-- *** API KEY *** -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDKsNs6X5yXsq_hpBWSfMop7NaO_nwUs9g" />
+
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.LocationByAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.SetDeliveryAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.SendEmail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.PrintInvoice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.PaymentAccountDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.BikerFeedbackDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.FoodFeedbackDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.UserFeedbacks"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.SystemReports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.BikerReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.CustomerReport"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.YearReportDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.MonthReportDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.YearWiseReports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.ExpenseDate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.ViewExpense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.AddExpense"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.ExpenseOption"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.DateReportDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.MonthWiseReports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.DayWiseReports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.ViewReports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.AllOrdersDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.OrdersHistory"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.DeliveredOrderDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.OnTheWayOrderDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.DevicesList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.ScanDevice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.OnTheWayOrders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.AssignOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.AcceptedOrderDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.PendingOrderDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.DeliveredOrders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.AcceptedOrders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.PendingOrders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.ManageOrders"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.CustomerOrderInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.OnlinePayment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.PaymentProcess"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.TotalBill"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.MenuItemDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.BikerPasswordChange"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.EditBikerProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.BikerProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Admin.EditAdminProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.ManagerPasswordChange"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Admin.AdminPasswordChange"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Admin.AdminProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.ProfileEdit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.ManagerProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.MenuItems"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.FoodCategories"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.ChangePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.PopularItems4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.CustomerProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.FoodCart"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.FoodMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.PopularItems3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.PopularItems2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.PopularItems"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.cust.sipnsnack.ViewImages" />
+        <activity android:name="com.cust.sipnsnack.ImageUpload" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.CustomerDetailsUnblock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.CustomerDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.ManageCustomers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Admin.UpdateManager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Admin.ManagersDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Admin.ViewManagers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Admin.AddManagers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Admin.ManageManagers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Admin.AdminView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.BikersView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Items.MainView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Customers.CustomerView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.UpdateBikers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.BikersDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Items.BrowseItems"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Items.UpdateItems"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Items.ItemsDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Items.ViewItems"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.ViewBikers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.AddBikers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Bikers.ManageBikers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Items.AddItems"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.Items.ManageItems"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.AfterSignUP"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name="com.cust.sipnsnack.ManagerDashboard.DashBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.LoginActivity"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name="com.cust.sipnsnack.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cust.sipnsnack.SplashScreen"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

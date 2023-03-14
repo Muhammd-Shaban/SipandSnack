@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="background"
+        android:outlineSpotShadowColor="@color/main_yellow"
+        card_view:cardBackgroundColor="@color/calmYellow"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="0dp"
+        card_view:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:id="@+id/addIconRL"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/addiconManagerIV"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/add" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/managerUsernameTVLeft"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Username : "
+                android:textStyle="bold"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/managerUsernameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/managerUsernameTVLeft"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/managerNameTVLeft"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/managerUsernameTVLeft"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Name : "
+                android:textStyle="bold"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/managerNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/managerUsernameTV"
+                android:layout_toRightOf="@+id/managerNameTVLeft"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/managerPhoneNoTVLeft"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/managerNameTVLeft"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Phone No : "
+                android:textStyle="bold"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/managerPhoneNoTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/managerNameTVLeft"
+                android:layout_toRightOf="@+id/managerPhoneNoTVLeft"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

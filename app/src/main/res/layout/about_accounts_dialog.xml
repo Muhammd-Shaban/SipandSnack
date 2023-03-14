@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="@color/calmYellow"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/matteBlack"
+        android:text="UPDATE ACCOUNTS"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/matteBlack"
+        android:text="This is a screen where you can update the online payment account details."
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/matteBlack"
+        android:text="یہ ایک اسکرین ہے جہاں آپ آن لائن ادائیگی اکاؤنٹ کی تفصیلات کو اپ ڈیٹ کر سکتے ہیں۔"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:layout_gravity="center"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/okBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/matteBlack"
+        android:background="@drawable/rounded_button_yellow" />
+
+
+</LinearLayout>

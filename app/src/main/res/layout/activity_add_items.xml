@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cust.sipnsnack.Items.AddItems">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/backBTN"
+            android:src="@drawable/back_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="left"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/backBTN"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp">
+
+
+            <RelativeLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/calmYellow"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/engTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:text="ADD ITEM"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/engTV"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/addItemsUrdu"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/infoiconIV"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/blueinfologo" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:id="@+id/itemId"
+                android:layout_marginTop="10dp"
+                android:hint="@string/enterItemID"
+                android:textColorHint="@color/et_hint"
+                app:hintTextColor="@color/matteBlack"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                app:hintTextAppearance="@style/HintSize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_IdET"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+                    android:maxLength="10">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/enterItemCategory" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/calmYellow"
+                android:orientation="horizontal"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="7dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Category"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/categorySPN"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="20dp"
+                    android:prompt="@color/main_yellow"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:id="@+id/itemName"
+                android:layout_marginTop="10dp"
+                android:hint="@string/enterItemName"
+                android:textColorHint="@color/et_hint"
+                app:hintTextColor="@color/matteBlack"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                app:hintTextAppearance="@style/HintSize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/item_NameET"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+                    android:maxLength="40">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/itemPrice"
+                android:hint="@string/enterItemPrice"
+                android:textColorHint="@color/et_hint"
+                app:boxStrokeColor="@color/matteBlack"
+                app:hintTextColor="@color/matteBlack"
+                app:hintTextAppearance="@style/HintSize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/item_PriceET"
+                    android:digits="0123456789"
+                    android:maxLength="5">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/enterItemSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:background="@color/calmYellow"
+                android:orientation="horizontal"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:paddingRight="7dp"
+                android:paddingBottom="7dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Size"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+                <Spinner
+                    android:id="@+id/sizeSPN"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="20dp"
+                    android:prompt="@color/main_yellow"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/itemDescription"
+                android:hint="@string/enterItemDescription"
+                android:textColorHint="@color/et_hint"
+                app:boxStrokeColor="@color/matteBlack"
+                app:hintTextColor="@color/matteBlack"
+                app:hintTextAppearance="@style/HintSize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:lines="5"
+                    android:id="@+id/item_DescriptionET"
+                    android:maxLength="150">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/item_image"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/itemImg"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@color/darker_gray"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    app:civ_border_color="@color/matteBlack"
+                    app:civ_border_width="2dp" />
+
+
+                <ImageButton
+                    android:id="@+id/itemImageBTN"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="73dp"
+                    android:background="@drawable/shape"
+                    android:src="@drawable/ic_photo_camera" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/addItemsBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/main_button_bg"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Add / درج کریں"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

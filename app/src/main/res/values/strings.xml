@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name">Sip n Snack</string>
+    <string name="welcome_note">Welcome to Sip n Snack</string>
+    <string name="go_to_login">Already have an account? Login here</string>
+    <string name="go_to_signup">New here? Click to Register</string>
+
+    <string name="enterUsername">Enter Username / صارف نام درج کریں</string>
+    <string name="enterEmail">Enter Email / ای میل درج کریں</string>
+    <string name="enterAccountName">Account Name / اکاؤنٹ کا نام</string>
+    <string name="enterAccountNumber">Account Number / اکاؤنٹ کا نمبر</string>
+    <string name="enterPassword">Enter Password / پاس ورڈ درج کریں</string>
+    <string name="enterName">Enter Name / نام درج کریں</string>
+    <string name="enterRePassword">Re-Enter Password / دوبارہ پاس ورڈ</string>
+    <string name="enterPhone">Enter Phone No / فون نمبر درج کریں</string>
+    <string name="enterAddress">Enter Address / پتہ درج کریں</string>
+    <string name="dev">ڈویلپر سے رابطہ کریں</string>
+    <string name="aboutApp">This app is about delivery of food of the restaurant that provides a quality taste in the town. This app contains different methods of manging items, bikers and ordering food. The app also provide the online payment method. </string>
+    <string name="aboutApp2">یہ ایپ ریستوران کے کھانے کی ترسیل کے بارے میں ہے جو شہر میں معیاری ذائقہ فراہم کرتی ہے۔ اس ایپ میں آئٹمز ، بائیکرز اور کھانے کا آرڈر دینے کے مختلف طریقے شامل ہیں۔ ایپ آن لائن ادائیگی کا طریقہ بھی فراہم کرتی ہے۔</string>
+
+    <string name="aboutCategory1">Using this form, manager can be able to add new food category or they can remove the existing category from system.</string>
+    <string name="aboutCategory2">اس فارم کا استعمال کرتے ہوئے، مینیجر کھانے کے نئے زمرے کو شامل کرنے کے قابل ہو سکتے ہیں یا وہ موجودہ زمرہ کو سسٹم سے ہٹا سکتے ہیں۔</string>
+
+    <string name="aboutPassChange1">By using this form, user can be able to change their accounts password by providing thier old password and then finally provide a new password for account.</string>
+    <string name="aboutPassChange2">اس فارم کو استعمال کرتے ہوئے، صارف اپنا پرانا پاس ورڈ فراہم کر کے اپنے اکاؤنٹس کا پاس ورڈ تبدیل کر سکتا ہے اور پھر آخر میں اکاؤنٹ کے لیے نیا پاس ورڈ فراہم کر سکتا ہے۔</string>
+
+    <string name="foodItems">(اشیاء)</string>
+    <string name="bikers">(بائیکرز)</string>
+    <string name="orders">(آرڈرز)</string>
+    <string name="sales">(فروخت)</string>
+    <string name="expense">(خرچہ)</string>
+    <string name="reports">(رپورٹیں)</string>
+    <string name="manageProfile">(پروفائل میں تبدیلی)</string>
+    <string name="manageCustomer">(صارف)</string>
+    <string name="logout">(لاگ آوٹ)</string>
+    <string name="manageManagers">(مینیجرز)</string>
+    <string name="expenses">(اخراجات)</string>
+
+    <string name="orderz">آرڈرز / Orders </string>
+    <string name="report">رپورٹ / Report </string>
+
+    <string name="profile">My Profile / پروفائل</string>
+    <string name="popular">Popular / مشہور</string>
+    <string name="details">Details / تفصیلات</string>
+    <string name="menu">Menu / فہرستِ طعام</string>
+    <string name="cart">Cart / آپ کی خریداری</string>
+    <string name="totalBill">Your Bill / آپ کا بل</string>
+    <string name="payment">Payment Type / ادائیگی کی قسم</string>
+    <string name="accounts">Accounts Detail / اکاؤنٹس کی تفصیلات</string>
+    <string name="orderInfo">Delivery Info / ترسیل کی معلومات</string>
+    <string name="orderDetails">Order Details / آرڈر کی تفصیلات</string>
+    <string name="assignOrder">Assign Order / حکم تفویض</string>
+    <string name="assignedOrder">Assigned Order / تفویض کردہ حکم</string>
+
+    <string name="scan_a_device">Scan A Device / ڈیوائس سکین کریں</string>
+
+    <string name="categories">Categories / کھانے کے زمرے</string>
+    <string name="about_application">About Application / ایپ کے بارے میں</string>
+    <string name="contact_developer">Contact Developer / ڈویلپر سے رابطہ کریں</string>
+
+    <string name="change_pwd">Change Password / پاس ورڈ تبدیل کریں</string>
+    <string name="changePwd">(پاس ورڈ تبدیل کریں)</string>
+    <string name="enterOldPassword">Old Password / پرانا پاس ورڈ درج کریں</string>
+    <string name="enterNewPassword">New Password / نیا پاس ورڈ درج کریں</string>
+    <string name="reportsByUsers">User Reports / صارف کی رپورٹ</string>
+    <string name="feedbacks">Feedbacks / تاثرات</string>
+    <string name="payment_details">Payment Details /  اکاؤنٹ کی تفصیلات</string>
+
+    <string name="customerViewInfo1">This is a main page where you can see the famous items by the restaurant </string>
+    <string name="customerViewInfo2"> یہ ایک مرکزی صفحہ ہے جہاں آپ ریستوراں کی مشہور اشیاء دیکھ سکتے ہیں</string>
+
+    <string name="customerProfileInfo1">This is a screen where you can see your information like your name, username, phone number, address etc. Also you can edit your profile information from here. </string>
+    <string name="customerProfileInfo2"> یہ ایک اسکرین ہے جہاں آپ اپنی معلومات جیسے کہ آپ کا نام، صارف نام، فون نمبر، پتہ وغیرہ دیکھ سکتے ہیں۔ اس کے علاوہ آپ یہاں سے اپنی پروفائل کی معلومات میں ترمیم بھی کر سکتے ہیں۔</string>
+
+    <string name="foodMenuInfo1">This is screen where you can see all the food items that were offered by restaurant and you can select the items of your choice and then order you food easily.</string>
+    <string name="foodMenuInfo2"> یہ وہ اسکرین ہے جہاں آپ ریستوراں کے ذریعہ پیش کردہ تمام کھانے کی اشیاء دیکھ سکتے ہیں اور آپ اپنی پسند کی اشیاء منتخب کرسکتے ہیں اور پھر آسانی سے کھانا آرڈر کرسکتے ہیں۔</string>
+
+    <string name="foodCartInfo1">This is screen where you can see the items that you have chosen for your order. You can modify your order from here like increasing the quantity of your food or to cancel the order etc. </string>
+    <string name="foodCartInfo2"> یہ وہ اسکرین ہے جہاں آپ ان اشیاء کو دیکھ سکتے ہیں جنہیں آپ نے اپنے آرڈر کے لیے منتخب کیا ہے۔ آپ یہاں سے اپنے آرڈر میں ترمیم کرسکتے ہیں جیسے اپنے کھانے کی مقدار بڑھانا یا آرڈر منسوخ کرنا وغیرہ۔</string>
+
+    <string name="managerProfileInfo1">This is a screen where you can see your information like your name, phone number etc. Also you can edit your profile information from here. </string>
+    <string name="managerProfileInfo2"> یہ ایک اسکرین ہے جہاں آپ اپنی معلومات جیسے کہ آپ کا نام، صارف نام، فون نمبر، وغیرہ دیکھ سکتے ہیں۔ اس کے علاوہ آپ یہاں سے اپنی پروفائل کی معلومات میں ترمیم بھی کر سکتے ہیں۔</string>
+
+    <string name="addBikers">Add Bikers / بائیکرز شامل کریں</string>
+    <string name="addItems">Add Items / اشیاء شامل کریں</string>
+    <string name="dailyReports">Daily Basis / دن وار رپورٹ</string>
+    <string name="monthlyReports">Monthly Basis / ماہانہ رپورٹ</string>
+    <string name="yearlyReports">Yearly Basis / سالانہ رپورٹ</string>
+    <string name="addItemsUrdu">(اشیاء شامل کریں)</string>
+    <string name="addExpenseUrdu">(اخراجات شامل کریں)</string>
+    <string name="addCategoriesUrdu">(زمرہ جات شامل کریں)</string>
+    <string name="addBikersUrdu">(بائیکر شامل کریں)</string>
+    <string name="viewBikers">View Bikers / بائیکرز دیکھیں</string>
+    <string name="viewItems">View Items / اشیاء دیکھیں</string>
+    <string name="browseItems">Browse Items / اشیاء کو براؤز کریں</string>
+    <string name="updateItems"> (آئٹم کو اپ ڈیٹ کریں) </string>
+    <string name="updateBikers"> (بائیکرز کو اپ ڈیٹ کریں) </string>
+    <string name="addExpense">Add Expenses / اخراجات شامل کریں</string>
+    <string name="viewExpense">View Expenses / اخراجات دیکھیں</string>
+
+    <string name="pendingUrdu">(زیر التواء آرڈرز)</string>
+    <string name="acceptedUrdu">(قبول کر لیا آرڈرز)</string>
+    <string name="deliveredUrdu">(ترسیل ہو گئی آرڈرز)</string>
+
+    <string name="pending">Pending / زیر التواء</string>
+    <string name="accepted">Accepted / قبول کر لیا</string>
+    <string name="onTheWay">On the Way / راستے میں</string>
+    <string name="delivered">Delivered / ترسیل ہو گئی</string>
+
+    <string name="item_image">Item Image / آئٹم کی تصویر</string>
+    <string name="popular1">Popular Item (1) مقبول آئٹم</string>
+    <string name="popular2">Popular Item (2) مقبول آئٹم</string>
+    <string name="popular3">Popular Item (3) مقبول آئٹم</string>
+    <string name="popular4">Popular Item (4) مقبول آئٹم</string>
+
+    <string name="food">Food / کھانا</string>
+    <string name="biker">Biker / بائیکر</string>
+    <string name="customers">Customers / صارف</string>
+
+    <string name="addManagers">Add Managers / مینیجرز شامل کریں</string>
+    <string name="viewManagers">View Managers / مینیجرز دیکھیں</string>
+    <string name="updateManagers"> (مینیجر کو اپ ڈیٹ کریں) </string>
+    <string name="addManagersUrdu">(مینیجر شامل کریں)</string>
+
+    <string name="enterItemID">Enter Item ID / آئٹم کی شناخت درج کریں</string>
+    <string name="enterExpenseName">Enter Expense Name / خرچ کا نام درج کریں</string>
+    <string name="enterItemName">Enter Item Name / آئٹم کا نام درج کریں</string>
+    <string name="enterItemCategory">Enter Item Category / آئٹم کا زمرہ درج کریں</string>
+    <string name="enterExpenseCategory">Enter Expense Category / خرچ کا زمرہ درج کریں</string>
+    <string name="enterExpenseAmount">Enter Expense Amount / اخراجات کی رقم درج کریں</string>
+    <string name="enterItemPrice">Enter Item Price / آئٹم کی قیمت درج کریں</string>
+    <string name="enterItemDescription">Enter Item Description / آئٹم کی تفصیل درج کریں</string>
+    <string name="enterItemSize">Enter Item Size / آئٹم سائز درج کریں</string>
+
+    <string name="enterBikerUsername">Enter Biker Username / بائیکر کے صارف نام درج کریں</string>
+    <string name="enterBikerName">Enter Biker Name / بائیکر کا نام درج کریں </string>
+    <string name="enterBikerPassword">Enter Biker Password / بائیکر پاس ورڈ درج کریں </string>
+    <string name="enterBikerPhoneNo">Enter Biker Phone No / بائیکر فون نمبر درج کریں </string>
+    <string name="enterBikerAddress">Enter Biker Address / بائیکر کا پتہ درج کریں </string>
+
+    <string name="enterManagerName">Enter Manager Name / مینیجر کا نام درج کریں </string>
+    <string name="enterManagerUsername">Enter Manager Username / مینیجر صارف نام درج کریں </string>
+    <string name="enterManagerPassword">Enter Manager Password / مینیجر پاس ورڈ درج کریں </string>
+    <string name="enterManagerPhoneNo">Enter Manager Phone No / مینیجر فون نمبر درج کریں </string>
+
+    <string name="enterCategoryName">Enter Category Name / زمرہ کا نام درج کریں</string>
+
+    <string name="myProfile">My Profile / میری پروفائل </string>
+    <string name="ProfileUrdu"> (میری پروفائل) </string>
+    <string name="doEdit">Edit / ترمیم کریں </string>
+    <string name="doLogout">Logout / لاگ آؤٹ کریں </string>
+    <string name="editProfile"> (پروفائل میں ترمیم کریں) </string>
+    <string name="edit_details"> (تفصیلات میں ترمیم کریں) </string>
+    <string name="updateProfile1"> This is a screen where you can update your profile by filling the updated information in fields. </string>
+    <string name="updateProfile2"> یہ ایک اسکرین ہے جہاں آپ فیلڈز میں اپ ڈیٹ کردہ معلومات کو بھر کر اپنے پروفائل کو اپ ڈیٹ کر سکتے ہیں۔ </string>
+
+    <string name="logout_menu">Logout / (لاگ آوٹ)</string>
+    <string name="stars_menu">Stars / (ستارے)</string>
+    <string name="title_activity_order_live_location">Map</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

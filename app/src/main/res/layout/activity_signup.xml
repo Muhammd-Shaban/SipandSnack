@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cust.sipnsnack.SignupActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/mainImageView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@color/main_yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainPageCL"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".78"
+        app:layout_constraintVertical_bias="1"
+        android:backgroundTint="@color/half_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/view_bg">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUp_TILP1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintVertical_bias=".12"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:hint="@string/enterName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColorHint="@color/et_hint"
+            app:hintTextColor="@color/matteBlack"
+            app:boxStrokeColor="@color/matteBlack"
+            app:hintTextAppearance="@style/HintSize">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_Name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="abcdefghijklmnopqrstuvwxzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:maxLength="60"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="@color/et_hint"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:textSize="14sp"
+                android:paddingRight="6dp"
+                android:paddingBottom="10dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_name">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUp_TILP2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintHorizontal_bias=".5"
+            android:hint="@string/enterUsername"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signUp_TILP1"
+            android:textColorHint="@color/et_hint"
+            app:hintTextColor="@color/matteBlack"
+            app:boxStrokeColor="@color/matteBlack"
+            app:hintTextAppearance="@style/HintSize">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_Username"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="30"
+                android:inputType="text"
+                android:drawableStart="@drawable/ic_username"
+                android:textColor="@color/black"
+                android:textColorHint="@color/et_hint"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:textSize="14sp"
+                android:paddingRight="6dp"
+                android:paddingBottom="10dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_username">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUp_TILP7"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintHorizontal_bias=".5"
+            android:hint="@string/enterEmail"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signUp_TILP2"
+            android:textColorHint="@color/et_hint"
+            app:hintTextColor="@color/matteBlack"
+            app:boxStrokeColor="@color/matteBlack"
+            app:hintTextAppearance="@style/HintSize">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_Email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="50"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/ic_username_focused"
+                android:textColor="@color/black"
+                android:textColorHint="@color/et_hint"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:textSize="14sp"
+                android:paddingRight="6dp"
+                android:paddingBottom="10dp"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@drawable/ic_username">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUp_TILP3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_TILP7"
+            android:hint="@string/enterPassword"
+            android:textColorHint="@color/et_hint"
+            app:hintTextColor="@color/matteBlack"
+            app:boxStrokeColor="@color/matteBlack"
+            app:hintTextAppearance="@style/HintSize"
+            tools:ignore="MissingClass">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_Password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="30"
+                android:paddingRight="6dp"
+                android:drawableStart="@drawable/ic_password_focused"
+                android:drawablePadding="10dp"
+                android:textColorHint="@color/et_hint"
+                android:textSize="14sp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_password_focused">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUp_TILP4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_TILP3"
+            android:hint="@string/enterRePassword"
+            android:textColorHint="@color/et_hint"
+            app:hintTextColor="@color/matteBlack"
+            app:boxStrokeColor="@color/matteBlack"
+            app:hintTextAppearance="@style/HintSize"
+            app:passwordToggleEnabled="true"
+            tools:ignore="MissingClass">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_RePassword"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="30"
+                android:paddingRight="6dp"
+                android:drawableStart="@drawable/ic_password_focused"
+                android:drawablePadding="10dp"
+                android:textColorHint="@color/et_hint"
+                android:textSize="14sp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_password_focused">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUp_TILP5"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_TILP4"
+            android:hint="@string/enterPhone"
+            android:textColorHint="@color/et_hint"
+            app:hintTextColor="@color/matteBlack"
+            app:boxStrokeColor="@color/matteBlack"
+            app:hintTextAppearance="@style/HintSize"
+            tools:ignore="MissingClass">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_PhoneNo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLength="20"
+                android:paddingRight="6dp"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:textColorHint="@color/et_hint"
+                android:textSize="14sp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_phone">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUp_TILP6"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_TILP5"
+            android:hint="@string/enterAddress"
+            android:textColorHint="@color/et_hint"
+            app:hintTextColor="@color/matteBlack"
+            app:boxStrokeColor="@color/matteBlack"
+            app:hintTextAppearance="@style/HintSize"
+            tools:ignore="MissingClass">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signup_Address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:maxLength="250"
+                android:paddingRight="6dp"
+                android:gravity="start"
+                android:maxLines="5"
+                android:textColorHint="@color/et_hint"
+                android:textSize="14sp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent=".8"
+            app:layout_constraintVertical_bias=".2"
+            android:text="SignUp"
+            android:backgroundTint="@color/main_yellow"
+            android:background="@drawable/main_button_bg"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signUp_TILP6"
+            />
+
+        <TextView
+            android:id="@+id/goToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_login"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.2"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:textColorHint="@color/et_hint"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_regular"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signUp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/mainPageLogo"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        app:layout_constraintVertical_bias=".3"
+        app:layout_constraintBottom_toTopOf="@id/mainPageCL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mainImageView1"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIP N SNACK"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="26sp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintVertical_bias=".2"
+        android:fontFamily="@font/biorhyme_bold"
+        app:layout_constraintBottom_toTopOf="@id/mainPageCL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainPageLogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

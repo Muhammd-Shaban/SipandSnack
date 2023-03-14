@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cust.sipnsnack.ManagerDashboard.PrintInvoice">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/mainRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:layout_margin="4dp">
+
+            <ImageView
+                android:id="@+id/backBTN"
+                android:src="@drawable/back_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <LinearLayout
+                android:id="@+id/mainLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/backBTN"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orderDetails"
+                    android:textSize="21sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"
+                    android:layout_marginTop="8dp"/>
+
+                <View
+                    android:layout_width="320dp"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_yellow" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/customerNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAEEM"
+                android:layout_below="@id/mainLL"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="true"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:textColor="@color/matteBlack"/>
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customerNameTV"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone# : "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/customerPhoneNoTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0331-6788090"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL1"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/paymentTypeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LL3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL2"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accepted By: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/acceptedByTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ahsan"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LL5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL3"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/customerAddressTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ABC TOWN ISB"
+                    android:layout_marginRight="4dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateTimeLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/LL5"
+                android:weightSum="2"
+                android:layout_marginTop="7dp">
+
+                <TextView
+                    android:id="@+id/timeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time : "
+                    android:textSize="16sp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:layout_weight="1"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/dateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date : "
+                    android:layout_marginRight="4dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:layout_weight="1"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/receiptImageIV"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:src="@drawable/logo"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/dateTimeLL"
+                android:padding="15dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="15dp"/>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/receiptImageIV"
+                android:background="@color/matteBlack" />
+
+
+            <LinearLayout
+                android:id="@+id/LL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view4"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/accepted_items_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:scrollbars="vertical" />
+
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_below="@+id/accepted_items_recycler_view"
+                        android:background="@color/matteBlack" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/RL1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:layout_below="@+id/view1">
+
+                        <TextView
+                            android:id="@+id/qty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Quantity"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/matteBlack"/>
+
+
+                        <TextView
+                            android:id="@+id/qty2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="..............................."
+                            android:layout_toRightOf="@+id/qty"
+                            android:textColor="@color/matteBlack"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginLeft="25dp"
+                            android:textSize="16sp"/>
+
+
+                        <TextView
+                            android:id="@+id/totalQtyTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/matteBlack"/>
+
+
+                        <TextView
+                            android:id="@+id/qty3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Bill"
+                            android:layout_below="@+id/qty"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/matteBlack"/>
+
+
+                        <TextView
+                            android:id="@+id/qty4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="..........................................."
+                            android:layout_toRightOf="@+id/qty3"
+                            android:layout_below="@+id/qty2"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/matteBlack"
+                            android:layout_marginLeft="25dp"
+                            android:textSize="16sp"/>
+
+
+                        <TextView
+                            android:id="@+id/totalPriceTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1200"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_below="@+id/totalQtyTV"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="18sp"
+                            android:textColor="@color/matteBlack"/>
+
+                    </RelativeLayout>
+
+
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_below="@+id/RL1"
+                        android:background="@color/matteBlack" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/view2"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/generateBillBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:text="Print Bill"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="6dp"
+                            android:backgroundTint="#1338BE"
+                            android:textColor="@color/half_white"
+                            android:fontFamily="@font/biorhyme_bold"
+                            android:layout_weight="2"/>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.cust.sipnsnack.ManagerDashboard.ExpenseDate">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backBTN"
+            android:src="@drawable/back_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/backBTN"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/downloadIV"
+                    android:layout_width="30dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_download" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/reportHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Daily Expense"
+                    android:textColor="@color/red"
+                    android:textSize="23dp" />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/dateTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="27_12_2021"
+                        android:textColor="@color/red"
+                        android:textSize="20dp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/middleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainLayout"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:id="@+id/firstView"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/main_yellow" />
+
+                <TextView
+                    android:id="@+id/expenseLeft"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Total Expense"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/expenseRight"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/expenseLeft"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="0"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="16dp" />
+
+
+                <ImageView
+                    android:id="@+id/expandExpense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstView"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/expenseRight"
+                    android:background="@drawable/expand" />
+
+                <ImageView
+                    android:id="@+id/collapseExpense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstView"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/expenseRight"
+                    android:background="@drawable/collapse"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/lastView"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/expenseRight"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/main_yellow" />
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/expenseMainLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lastView">
+
+                    <RelativeLayout
+                        android:id="@+id/Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rounded_button"
+                        android:padding="15dp">
+
+
+                        <TextView
+                            android:id="@+id/categoriesTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Category-Wise Expense"
+                            android:textColor="@color/red"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/crockeryLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/categoriesTV"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Crockery"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/crockeryRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/categoriesTV"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/crockeryLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/kitchenLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/crockeryLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Kitchen"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/kitchenRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/crockeryRight"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/kitchenLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/bikersLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/kitchenLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Bikers"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/bikersRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/kitchenRight"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/bikersLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/maintenanceLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/bikersLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Maintenance"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/maintenanceRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/bikersRight"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/maintenanceLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/othersLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/maintenanceLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Others"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/othersRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/maintenanceRight"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/othersLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/graphLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/expenseMainLayout">
+
+                    <TextView
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:id="@+id/salesDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Below Graph shows how much expense is recorded on specified Date."
+                        android:textColor="@color/aqua"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pieChartGraph"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_below="@+id/salesDescription"
+                        android:layout_marginTop="50dp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/saleEmpty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/expenseMainLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="There is No Expense Recorded"
+                    android:textColor="@color/red"
+                    android:visibility="gone"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/closeBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/middleLayout"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/main_button_bg"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Close"
+                android:textColor="@color/matteBlack"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

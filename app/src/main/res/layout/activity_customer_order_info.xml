@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cust.sipnsnack.Customers.CustomerOrderInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/backBTN"
+                    android:src="@drawable/back_icon"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"/>
+
+                <TextView
+                    android:id="@+id/mainTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orderInfo"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"/>
+
+                <View
+                    android:layout_width="320dp"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/matteBlack" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/LL1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"
+                    android:text="You can change your Delivery Information from here : "/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name : "
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:id="@+id/customerName"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:hint="@string/enterName"
+                    android:textColorHint="@color/et_hint"
+                    app:hintTextColor="@color/matteBlack"
+                    app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                    app:hintTextAppearance="@style/HintSize">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nameET"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                        android:maxLength="40">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone No : "
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="12dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:hint="@string/enterPhone"
+                    android:textColorHint="@color/et_hint"
+                    app:hintTextColor="@color/matteBlack"
+                    app:boxStrokeColor="@color/matteBlack"
+                    app:hintTextAppearance="@style/HintSize"
+                    tools:ignore="MissingClass">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/phoneNoET"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxLength="20"
+                        android:textColorHint="@color/et_hint"
+                        android:textSize="14sp"
+                        android:digits="0123456789-*+# "
+                        android:textColor="@color/black">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/confirmBtn"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:text="Confirm"
+                    android:padding="6dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/matteBlack"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="@color/calmYellow"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information About Add Expense"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/matteBlack"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="18dp"
+        />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="This activity contains the form that prompts manager for required fields of the expense. After filling the form, manager can be able to add expense to the database.\n\n اس سرگرمی میں وہ فارم ہوتا ہے جو مینیجر کو اخراجات کے مطلوبہ فیلڈز کا اشارہ کرتا ہے۔ فارم کو بھرنے کے بعد، مینیجر ڈیٹا بیس میں اخراجات شامل کرنے کے قابل ہو سکتا ہے۔"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16dp"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+
+
+
+    <Button
+        android:id="@+id/okBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/matteBlack"
+        android:background="@drawable/rounded_button_yellow" />
+
+
+
+</LinearLayout>

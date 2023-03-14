@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context="com.cust.sipnsnack.ManagerDashboard.ScanDevice">
+
+
+    <ImageView
+        android:layout_marginTop="150dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/scan" />
+
+    <Button
+        android:id="@+id/scanBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/main_button_bg"
+        android:fontFamily="@font/biorhyme_bold"
+        android:text="@string/scan_a_device"
+        android:textColor="@color/matteBlack"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

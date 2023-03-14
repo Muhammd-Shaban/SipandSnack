@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="@color/calmYellow"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information About Add Biker"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/matteBlack"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="24dp"
+        />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="This page contains the form that prompts manager for required fields of the bikers. After filling the form, manager can be able to create account of biker and save into database.\n\n اس صفحے میں وہ فارم موجود ہے جو منیجر کو بائیکرز کے مطلوبہ شعبوں کے لیے اشارہ کرتا ہے۔ فارم بھرنے کے بعد ، مینیجر بائیکر کا اکاؤنٹ بنانے اور ڈیٹا بیس میں محفوظ کرنے کے قابل ہوسکتا ہے۔"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16dp"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+
+
+
+    <Button
+        android:id="@+id/okBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/matteBlack"
+        android:background="@drawable/rounded_button_yellow"
+        />
+
+
+
+</LinearLayout>

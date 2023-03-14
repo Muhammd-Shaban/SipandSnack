@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cust.sipnsnack.Bikers.BikersStars">
+
+    <ImageView
+        android:id="@+id/backBTN"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/back_icon"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Stars / آپ کے ستارے"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="24sp"
+        android:textColor="@color/darkPurple"
+        android:fontFamily="@font/poppins_semibold"/>
+
+    <View
+        android:layout_width="290dp"
+        android:layout_height="3dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/dark_goldenrod"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp">
+
+        <TextView
+            android:id="@+id/starsCountTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="..."
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="42sp"
+            android:textColor="@color/matteBlack"/>
+
+        <TextView
+            android:id="@+id/remarksTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="..."
+            android:fontFamily="@font/biorhyme_bold"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"
+            android:textColor="@color/matteBlack"/>
+
+    </LinearLayout>
+
+
+    <RatingBar
+        android:id="@+id/starsRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"/>
+
+
+    <Button
+        android:id="@+id/goBack"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_button_bg"
+        android:layout_gravity="center"
+        android:text="BACK"
+        android:textColor="@color/matteBlack"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppins_semibold"/>
+
+</LinearLayout>

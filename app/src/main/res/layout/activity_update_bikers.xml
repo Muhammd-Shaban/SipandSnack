@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cust.sipnsnack.Bikers.UpdateBikers">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backBTN"
+            android:src="@drawable/back_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/backBTN"
+            android:padding="20dp">
+
+
+            <RelativeLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/calmYellow"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/engTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:text="UPDATE BIKER"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/engTV"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:text="@string/updateBikers"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/infoiconIV"
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/blueinfologo" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bikersUsername"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/enterBikerUsername"
+                android:textColorHint="@color/et_hint"
+                app:boxStrokeColor="@color/matteBlack"
+                app:hintTextColor="@color/matteBlack"
+                app:hintTextAppearance="@style/HintSize">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/updateBiker_UsernameET"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+                    android:maxLength="20">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bikersName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/enterBikerName"
+                android:textColorHint="@color/et_hint"
+                app:boxStrokeColor="@color/matteBlack"
+                app:hintTextColor="@color/matteBlack"
+                app:hintTextAppearance="@style/HintSize">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/updateBiker_NameET"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+                    android:maxLength="35">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bikerPhoneNo"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/enterBikerPhoneNo"
+                android:textColorHint="@color/et_hint"
+                app:hintTextColor="@color/matteBlack"
+                app:boxStrokeColor="@color/matteBlack"
+                app:hintTextAppearance="@style/HintSize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/updateBiker_phoneNoET"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:maxLength="16">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/bikerAddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/enterBikerAddress"
+                android:textColorHint="@color/et_hint"
+                app:boxStrokeColor="@color/matteBlack"
+                app:hintTextColor="@color/matteBlack"
+                app:hintTextAppearance="@style/HintSize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/updateBiker_AddressET"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="5"
+                    android:maxLength="100">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/bikersButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/bikersUpdateButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/rounded_button_yellow"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:text="UPDATE"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

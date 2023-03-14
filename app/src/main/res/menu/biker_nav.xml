@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/top1">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="@string/profile"
+            android:icon="@drawable/unblock_employee" />
+
+        <item
+            android:id="@+id/nav_changePWD"
+            android:title="@string/change_pwd"
+            android:icon="@drawable/ic_password" />
+
+        <item
+            android:id="@+id/nav_report"
+            android:title="@string/report"
+            android:icon="@drawable/ic_report" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/top2"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_stars"
+            android:title="@string/stars_menu"
+            android:icon="@drawable/ic_star" />
+
+    </group>
+
+
+
+    <group
+        android:id="@+id/top3"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="@string/logout_menu"
+            android:icon="@drawable/logout_icon" />
+
+    </group>
+
+</menu>

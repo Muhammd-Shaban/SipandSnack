@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cust.sipnsnack.Customers.OnlinePayment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/backBTN"
+                    android:src="@drawable/back_icon"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"/>
+
+                <TextView
+                    android:id="@+id/mainTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accounts"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="4dp"/>
+
+                <View
+                    android:layout_width="370dp"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/cobalt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/LL1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bank Account "
+                    android:textColor="@color/matteBlack"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:layout_marginTop="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bankAccountTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Account Name: Ahsan Kiyani "
+                        android:textColor="@color/matteBlack"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/biorhyme_regular" />
+
+                    <TextView
+                        android:id="@+id/bankAccountNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Account Number: 1234567890"
+                        android:textColor="@color/matteBlack"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/biorhyme_regular" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/orTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/LL2"
+                android:textColor="@color/matteBlack"
+                android:textSize="18sp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:layout_marginTop="14dp" />
+
+
+            <LinearLayout
+                android:id="@+id/LL3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/orTV"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Easypaisa Account "
+                    android:textColor="@color/matteBlack"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:layout_marginTop="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/EasypaisaAccNameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Account Name: Muhammad Ali "
+                        android:textColor="@color/matteBlack"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/biorhyme_regular" />
+
+                    <TextView
+                        android:id="@+id/EasypaisaNumberTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Easypaisa Number: 0312-3456789"
+                        android:textColor="@color/matteBlack"
+                        android:textSize="14sp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/biorhyme_regular" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/matteBlack"
+                android:layout_below="@+id/LL3"/>
+
+
+            <LinearLayout
+                android:id="@+id/LL4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_below="@+id/LL3"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textSize="12sp"
+                    android:text="Upload Receipt: "/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="Receipt Image / رسید کی تصویر"
+                        android:layout_marginLeft="14dp"
+                        android:fontFamily="@font/biorhyme_bold"
+                        android:textColor="@color/matteBlack" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/receiptImg"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:src="@color/darker_gray"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="15dp"
+                        app:civ_border_color="@color/matteBlack"
+                        app:civ_border_width="2dp" />
+
+
+                    <ImageButton
+                        android:id="@+id/receiptImageBTN"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="73dp"
+                        android:background="@drawable/shape"
+                        android:src="@drawable/ic_photo_camera" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/continueBtn"
+                android:layout_width="250dp"
+                android:layout_height="56dp"
+                android:text="Continue"
+                android:layout_below="@+id/LL4"
+                android:background="@drawable/main_button_bg"
+                android:padding="6dp"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/matteBlack"
+                android:fontFamily="@font/biorhyme_bold"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="8dp"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cust.sipnsnack.ManagerDashboard.PaymentAccountDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backBTN"
+            android:src="@drawable/back_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/backBTN"
+            android:padding="20dp">
+
+
+            <RelativeLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/calmYellow"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/engTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:text="EDIT DETAILS"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/engTV"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:text="@string/edit_details"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+                    <ImageView
+                        android:id="@+id/infoIconIV"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/blueinfologo" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bank Account "
+                android:textColor="@color/matteBlack"
+                android:textSize="24sp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:layout_marginTop="26dp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Title"
+                android:textSize="14sp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:layout_marginTop="10dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:id="@+id/accName"
+                android:hint="@string/enterAccountName"
+                android:textColorHint="@color/et_hint"
+                app:hintTextColor="@color/matteBlack"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                app:hintTextAppearance="@style/HintSize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bankAccNameET"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:maxLength="60">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Number"
+                android:textSize="14sp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:layout_marginTop="15dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:id="@+id/accNo"
+                android:hint="@string/enterAccountNumber"
+                android:textColorHint="@color/et_hint"
+                app:hintTextColor="@color/matteBlack"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                app:hintTextAppearance="@style/HintSize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bankAccNumberET"
+                    android:digits="0123456789 "
+                    android:inputType="number"
+                    android:maxLength="30">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Easypaisa Account "
+                android:textColor="@color/matteBlack"
+                android:textSize="24sp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:layout_marginTop="26dp" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Title"
+                android:textSize="14sp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:layout_marginTop="10dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:id="@+id/accName2"
+                android:hint="@string/enterAccountName"
+                android:textColorHint="@color/et_hint"
+                app:hintTextColor="@color/matteBlack"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                app:hintTextAppearance="@style/HintSize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EasyPaisaAccNameET"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:maxLength="60">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Number"
+                android:textSize="14sp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:layout_marginTop="15dp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:id="@+id/accNo2"
+                android:hint="@string/enterAccountNumber"
+                android:textColorHint="@color/et_hint"
+                app:hintTextColor="@color/matteBlack"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                app:hintTextAppearance="@style/HintSize">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EasypaisaNumberET"
+                    android:digits="0123456789 "
+                    android:inputType="number"
+                    android:maxLength="30">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/itemsButtonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/updateBTN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/rounded_button_yellow"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:text="UPDATE"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="21sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

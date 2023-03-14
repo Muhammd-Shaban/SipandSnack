@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/matteBlack"
+    tools:context="com.cust.sipnsnack.Customers.MenuItems">
+
+
+    <ImageView
+        android:id="@+id/backBTN"
+        android:src="@drawable/ic_back_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+
+
+    <TextView
+        android:id="@+id/categoryNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chilled Drinks"
+        android:textSize="24sp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/half_white"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:layout_width="250dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/main_yellow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="10dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/menu_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:scrollbars="vertical" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

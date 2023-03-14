@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/half_white"
+    tools:context="com.cust.sipnsnack.Bikers.BikersView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/silver"
+                    app:subtitleTextColor="#0A0A0A"
+                    app:title="Sip n Snack"
+                    app:navigationIcon="@drawable/navbaricon"
+                    app:titleTextColor="#111111" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/usernameTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:text="Sip n Snack"
+                            android:maxLength="15"
+                            android:layout_weight="1"
+                            android:layout_marginTop="5dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/infoIconIV"
+                                android:layout_width="50dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="3dp"
+                                android:background="@drawable/blueinfologo"
+                                android:layout_marginTop="5dp" />
+
+                            <ImageView
+                                android:id="@+id/profileIconIV"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="5dp"
+                                android:background="@drawable/profile"
+                                android:layout_marginTop="5dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/matteBlack"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/mainRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="15dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/mainLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/assignedOrder"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/biorhyme_bold"
+                            android:textColor="@color/matteBlack"
+                            android:layout_marginTop="10dp"/>
+
+                        <View
+                            android:layout_width="350dp"
+                            android:layout_height="3dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/dark_magenta" />
+
+
+                        <TextView
+                            android:id="@+id/noOrdersTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No Assigned Orders at the Moment"
+                            android:textSize="18sp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textColor="@color/matteBlack"
+                            android:layout_marginTop="120dp"/>
+
+                        <ImageView
+                            android:id="@+id/noOrdersIV"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_no_order"
+                            android:visibility="gone"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/allInfoRL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_below="@+id/mainLL">
+
+                    <RelativeLayout
+                        android:id="@+id/infoLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/customerNameTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NAEEM"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        android:textAllCaps="true"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/biorhyme_bold"
+                        android:textColor="@color/matteBlack"/>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_alignParentRight="true">
+
+
+                            <ImageView
+                                android:id="@+id/phoneCallIV"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginRight="8dp"
+                                android:src="@drawable/ic_phone_call" />
+
+
+                            <ImageView
+                                android:id="@+id/locationIV"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_location" />
+
+                        </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/LL1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/customerNameTV"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Phone# : "
+                            android:textSize="16sp"
+                            android:fontFamily="@font/biorhyme_bold"
+                            android:textColor="@color/matteBlack"/>
+
+                        <TextView
+                            android:id="@+id/customerPhoneNoTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0331-6788090"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/biorhyme_regular"
+                            android:textColor="@color/matteBlack"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/LL2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/LL1"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Payment: "
+                            android:textSize="16sp"
+                            android:fontFamily="@font/biorhyme_bold"
+                            android:textColor="@color/matteBlack"/>
+
+                        <TextView
+                            android:id="@+id/paymentTypeTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Online"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/biorhyme_regular"
+                            android:textColor="@color/matteBlack"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/LL5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/LL2"
+                        android:layout_marginTop="6dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address: "
+                            android:textSize="16sp"
+                            android:fontFamily="@font/biorhyme_bold"
+                            android:textColor="@color/matteBlack"/>
+
+                        <TextView
+                            android:id="@+id/customerAddressTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ABC TOWN ISB"
+                            android:layout_marginRight="4dp"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/biorhyme_regular"
+                            android:textColor="@color/matteBlack"/>
+
+                    </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:id="@+id/view4"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_below="@+id/infoLL"
+                        android:background="@color/slate_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/dateTimeLL"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/view4"
+                        android:weightSum="2"
+                        android:layout_marginTop="7dp">
+
+                        <TextView
+                            android:id="@+id/timeTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time : "
+                            android:textSize="16sp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="4dp"
+                            android:fontFamily="@font/biorhyme_regular"
+                            android:layout_weight="1"
+                            android:textColor="@color/matteBlack"/>
+
+                        <TextView
+                            android:id="@+id/dateTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date : "
+                            android:layout_marginRight="6dp"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/biorhyme_regular"
+                            android:layout_weight="1"
+                            android:textColor="@color/matteBlack"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view5"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_below="@+id/dateTimeLL"
+                        android:background="@color/slate_gray" />
+
+
+                    <LinearLayout
+                        android:id="@+id/LL4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view5"
+                        android:visibility="visible"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:text="Items / اشیاء"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textColor="@color/maroon"/>
+
+                        <View
+                            android:layout_width="110dp"
+                            android:layout_height="2dp"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/goldenrod"/>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp">
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/assigned_items_recycler_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:scrollbars="vertical" />
+
+
+                            <View
+                                android:id="@+id/view1"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="25dp"
+                                android:layout_below="@+id/assigned_items_recycler_view"
+                                android:background="@color/matteBlack" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/RL1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="22dp"
+                                android:layout_below="@+id/view1">
+
+                                <TextView
+                                    android:id="@+id/qty"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Quantity"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="18sp"
+                                    android:textColor="@color/matteBlack"/>
+
+
+                                <TextView
+                                    android:id="@+id/qty2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="..............................."
+                                    android:layout_toRightOf="@+id/qty"
+                                    android:textColor="@color/matteBlack"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:textSize="16sp"/>
+
+
+                                <TextView
+                                    android:id="@+id/totalQtyTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="18sp"
+                                    android:textColor="@color/matteBlack"/>
+
+
+                                <TextView
+                                    android:id="@+id/qty3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Bill"
+                                    android:layout_below="@+id/qty"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="18sp"
+                                    android:textColor="@color/matteBlack"/>
+
+
+                                <TextView
+                                    android:id="@+id/qty4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="..........................................."
+                                    android:layout_toRightOf="@+id/qty3"
+                                    android:layout_below="@+id/qty2"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/matteBlack"
+                                    android:layout_marginLeft="25dp"
+                                    android:textSize="16sp"/>
+
+
+                                <TextView
+                                    android:id="@+id/totalPriceTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1200"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_below="@+id/totalQtyTV"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="18sp"
+                                    android:textColor="@color/matteBlack"/>
+
+                            </RelativeLayout>
+
+
+                            <View
+                                android:id="@+id/view2"
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="22dp"
+                                android:layout_below="@+id/RL1"
+                                android:background="@color/matteBlack" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_below="@+id/view2"
+                                android:layout_marginTop="20dp">
+
+                                <Button
+                                    android:id="@+id/confirmDeliveryBTN"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="58dp"
+                                    android:text="Confirm Delivery"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginRight="18dp"
+                                    android:textSize="18sp"
+                                    android:backgroundTint="@color/dark_green"
+                                    android:textColor="@color/half_white"
+                                    android:fontFamily="@font/poppins_semibold" />
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/header_nav"
+        app:itemIconTint="@color/black"
+        app:itemTextAppearance="@style/HintSize"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/biker_nav" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

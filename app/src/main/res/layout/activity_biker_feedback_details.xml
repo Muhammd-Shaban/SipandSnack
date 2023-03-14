@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cust.sipnsnack.ManagerDashboard.BikerFeedbackDetails">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/mainRL"
+            android:padding="6dp"
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backBTN"
+                android:src="@drawable/back_icon"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <LinearLayout
+                android:id="@+id/mainLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_below="@id/backBTN"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orderDetails"
+                    android:textSize="21sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"
+                    android:layout_marginTop="8dp"/>
+
+                <View
+                    android:layout_width="320dp"
+                    android:layout_height="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/main_yellow" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainLL"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Name: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/customerNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qasim Khan"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL1"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer Phone: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/customerPhoneTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0331-3421005"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LL3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL2"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biker Name: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/bikerNameTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ali Waqas"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/LL4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL3"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biker Phone: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/bikerPhoneTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0331-3421005"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/LL5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL4"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/feedbackTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The food taste is good at all..."
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/LL5"
+                android:background="@color/matteBlack" />
+
+
+            <LinearLayout
+                android:id="@+id/LL6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view6"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp">
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/delivered_items_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="6dp"
+                        android:scrollbars="vertical" />
+
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_below="@+id/delivered_items_recycler_view"
+                        android:background="@color/matteBlack" />
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/view1"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/backBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:text="Back"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="10dp"
+                            android:textColor="@color/matteBlack"
+                            android:layout_weight="2"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/main_button_bg"
+                            android:fontFamily="@font/biorhyme_bold" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

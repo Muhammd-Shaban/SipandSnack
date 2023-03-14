@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="background"
+        android:outlineSpotShadowColor="@color/main_yellow"
+        card_view:cardBackgroundColor="@color/calmYellow"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="0dp"
+        card_view:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:id="@+id/addIconRL"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/addiconCustomers"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/add" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/CustomerUsernameTVLeft"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Username : "
+                android:textStyle="bold"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/customerUsernameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/CustomerUsernameTVLeft"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/customerNameTVLeft"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customerUsernameTV"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Name : "
+                android:textStyle="bold"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/customerNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customerUsernameTV"
+                android:layout_toRightOf="@+id/customerNameTVLeft"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/cancelOrdersTVLeft"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customerNameTVLeft"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Cancelled Orders : "
+                android:textStyle="bold"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+
+
+            <TextView
+                android:id="@+id/cancelOrdersTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customerNameTV"
+                android:layout_toRightOf="@+id/cancelOrdersTVLeft"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/statusTVLeft"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cancelOrdersTV"
+                android:layout_marginRight="5dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Status : "
+                android:textStyle="bold"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+
+
+            <TextView
+                android:id="@+id/statusTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cancelOrdersTV"
+                android:layout_toRightOf="@+id/statusTVLeft"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="@color/matteBlack"
+                android:textSize="14dp" />
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

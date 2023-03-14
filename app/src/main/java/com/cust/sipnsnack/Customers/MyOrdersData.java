@@ -1,0 +1,14 @@
+package com.cust.sipnsnack.Customers;
+
+public class MyOrdersData {
+
+    static String[] customerUsername = {};
+    static String[] customerName = {};
+    static String[] customerPhoneNo = {};
+    static String[] customerAddress = {};
+    static String[] paymentType =  {};
+    static String[] receiptImage = {};
+    static String[] orderDate =  {};
+    static String[] orderTime = {};
+
+}

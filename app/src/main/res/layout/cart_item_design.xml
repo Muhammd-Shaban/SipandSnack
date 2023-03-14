@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="background"
+        android:outlineSpotShadowColor="@color/main_yellow"
+        card_view:cardBackgroundColor="@color/calmYellow"
+        card_view:cardCornerRadius="9dp"
+        card_view:cardElevation="0dp"
+        card_view:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:id="@+id/mainRL"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp">
+
+            <ImageView
+                android:id="@+id/deleteItemIV"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="6dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_delete"/>
+
+            <TextView
+                android:id="@+id/itemNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHILLED DRINKS"
+                android:textSize="16sp"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:textColor="@color/matteBlack"/>
+
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_below="@+id/itemNameTV"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs. "
+                android:textSize="16sp"
+                android:fontFamily="@font/biorhyme_regular"
+                android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/itemPriceTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1200"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_below="@+id/LL1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Size: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/itemSizeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Extra Large"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/itemImgIV"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/deleteItemIV"
+                android:padding="6dp"
+                android:background="@drawable/iv_border"
+                android:adjustViewBounds="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/food_items"
+                android:scaleType="fitXY" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/itemImgIV"
+                android:layout_marginLeft="6dp"
+                android:background="@color/matteBlack" />
+
+
+            <LinearLayout
+                android:id="@+id/layoutLL"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/view">
+
+                <Button
+                    android:id="@+id/minusItemBTN"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="-"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/main_yellow"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/matteBlack"
+                    android:fontFamily="@font/biorhyme_bold" />
+
+                <TextView
+                    android:id="@+id/qtyTV"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/half_white"
+                    android:text="1"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/acme"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+
+                <Button
+                    android:id="@+id/plusItemBTN"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/main_yellow"
+                    android:textColor="@color/matteBlack"
+                    android:fontFamily="@font/biorhyme_bold" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="6dp"
+                android:layout_height="2dp"
+                android:layout_below="@+id/layoutLL"
+                android:layout_marginLeft="6dp"
+                android:background="@color/matteBlack" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/view2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. "
+                    android:textSize="18sp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/itemTotalPriceTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1600"
+                    android:textSize="18sp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

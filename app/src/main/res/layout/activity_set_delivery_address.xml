@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cust.sipnsnack.Customers.SetDeliveryAddress">
+
+    <ImageView
+        android:id="@+id/backBTN"
+        android:src="@drawable/back_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delivery Address / ترسیل کا پتہ "
+        android:layout_below="@+id/backBTN"
+        android:textSize="21sp"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textColor="@color/matteBlack"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"/>
+
+    <View
+        android:layout_width="325dp"
+        android:layout_height="2dp"
+        android:background="@color/dark_blue"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"/>
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Address : "
+        android:layout_below="@+id/tv1"
+        android:fontFamily="@font/biorhyme_regular"
+        android:textColor="@color/matteBlack"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addressLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/enterAddress"
+        android:textColorHint="@color/et_hint"
+        android:layout_below="@+id/tv"
+        app:hintTextColor="@color/matteBlack"
+        app:boxStrokeColor="@color/matteBlack"
+        app:hintTextAppearance="@style/HintSize"
+        tools:ignore="MissingClass">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addressET"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:maxLength="250"
+            android:paddingRight="6dp"
+            android:gravity="start"
+            android:maxLines="5"
+            android:textColorHint="@color/et_hint"
+            android:textSize="14sp"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/continueBTN"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/addressLayout"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="18sp"
+        android:textColor="@color/half_white"
+        android:text="Continue"
+        android:backgroundTint="@color/pale_violet_red"
+        android:layout_marginRight="18dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/continueBTN"
+        android:layout_margin="35dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/darkPurple"
+            android:fontFamily="@font/biorhyme_bold"
+            android:text="OR"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/currentBTN"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/LL1"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="18sp"
+        android:textColor="@color/half_white"
+        android:text="Current Location"
+        android:backgroundTint="@color/dark_slate_gray"
+        android:layout_marginRight="18dp" />
+
+</RelativeLayout>

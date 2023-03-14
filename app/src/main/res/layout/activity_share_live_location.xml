@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_steel_blue"
+    tools:context="com.cust.sipnsnack.Bikers.ShareLiveLocation">
+
+
+    <ImageView
+        android:id="@+id/backIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/back_icon"/>
+
+
+    <TextView
+        android:id="@+id/distanceTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textStyle="bold"
+        android:text="....."
+        android:textColor="@color/darkPurple"
+        android:textSize="21sp" />
+
+
+    <ImageView
+        android:id="@+id/callIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_phone_call"/>
+
+    <Button
+        android:id="@+id/getDirectionBTN"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/matteBlack"
+        android:text="Get Directions"
+        android:fontFamily="@font/poppins_semibold"
+        android:backgroundTint="@color/salmon"
+        android:layout_height="55dp"
+        android:layout_below="@+id/distanceTV" />
+
+    <fragment
+        android:id="@+id/google_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/getDirectionBTN"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+</RelativeLayout>

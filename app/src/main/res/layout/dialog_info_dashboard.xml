@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="@color/calmYellow"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information About Dashboard"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/matteBlack"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="18dp"
+        />
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="This page contains information that you can click on any of these options which are written on boxes for further working. You can also swipe on left side for further options. And you can also click on it for more actions.\n\n اس صفحے میں یہ معلومات موجود ہیں کہ آپ ان میں سے کسی ایک آپشن پر کلک کرسکتے ہیں جو کام کرنے کے لئے خانوں پر لکھا ہوا ہے۔ آپ مزید اختیارات کے لئے بائیں طرف بھی سوائپ کرسکتے ہیں۔ اور آپ مزید کارروائیوں کے لئے بھی اس پر کلک کرسکتے ہیں"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16dp"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+
+
+
+    <Button
+        android:id="@+id/okBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:fontFamily="@font/biorhyme_bold"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/matteBlack"
+        android:background="@drawable/rounded_button_yellow"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.cust.sipnsnack.ManagerDashboard.YearReportDetail">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backBTN"
+            android:src="@drawable/back_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/relativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/backBTN"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <ImageView
+                    android:layout_marginLeft="50dp"
+                    android:id="@+id/downloadIV"
+                    android:layout_width="30dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_download" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/reportHeading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Yearly Report"
+                    android:textColor="@color/red"
+                    android:textSize="23dp" />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/monthTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="2022"
+                        android:textColor="@color/red"
+                        android:textSize="20dp" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/middleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainLayout"
+                android:layout_marginTop="20dp">
+
+                <View
+                    android:id="@+id/firstView"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/main_yellow" />
+
+                <TextView
+                    android:id="@+id/saleLeft"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Total Sale"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/saleRight"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/saleLeft"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="0"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="16dp" />
+
+
+                <ImageView
+                    android:id="@+id/expandSales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstView"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/saleRight"
+                    android:background="@drawable/expand" />
+
+                <ImageView
+                    android:id="@+id/collapseSales"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/firstView"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/saleRight"
+                    android:background="@drawable/collapse"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/soldLeft"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/saleLeft"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Sold Items"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="16dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/soldRight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/saleRight"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/soldLeft"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="0"
+                    android:textColor="@color/matteBlack"
+                    android:textSize="16dp"
+
+                    />
+
+                <View
+                    android:id="@+id/lastView"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/soldRight"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/main_yellow" />
+
+
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/salesMainLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lastView">
+
+                    <RelativeLayout
+                        android:id="@+id/Layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rounded_button"
+                        android:padding="15dp">
+
+
+                        <TextView
+                            android:id="@+id/salesTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Categories Sale"
+                            android:textColor="@color/red"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/specialsLeft2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/salesTV"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Specials"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/specialsRight2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/salesTV"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/specialsLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/pizzaLeft2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/specialsLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Pizza"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/pizzaRight2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/specialsRight2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/pizzaLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/burgersLeft2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pizzaLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Burgers"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/burgersRight2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/pizzaRight2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/burgersLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/friesLeft2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/burgersLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Fries"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/friesRight2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/burgersRight2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/friesLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/snacksLeft2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/friesLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Snacks"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/snacksRight2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/friesRight2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/snacksLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/drinksLeft2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/snacksLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Chilled Drinks"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/drinksRight2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/snacksRight2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/drinksLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/seaFoodsLeft2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/drinksLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Sea Foods"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/seaFoodsRight2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/drinksRight2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/seaFoodsLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/coffeesLeft2"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/seaFoodsLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Coffees"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/coffeesRight2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/seaFoodsRight2"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/coffeesLeft2"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/salesMainLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/salesMainLayout2">
+
+                    <RelativeLayout
+                        android:id="@+id/Layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/rounded_button"
+                        android:padding="15dp">
+
+
+                        <TextView
+                            android:id="@+id/categoriesTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Categories Quantity"
+                            android:textColor="@color/red"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/specialsLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/categoriesTV"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Specials"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/specialsRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/categoriesTV"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/specialsLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/pizzaLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/specialsLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Pizza"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/pizzaRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/specialsRight"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/pizzaLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/burgersLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/pizzaLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Burgers"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/burgersRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/pizzaRight"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/burgersLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/friesLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/burgersLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Fries"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/friesRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/burgersRight"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/friesLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/snacksLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/friesLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Snacks"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/snacksRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/friesRight"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/snacksLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/drinksLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/snacksLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Chilled Drinks"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/drinksRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/snacksRight"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/drinksLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/seaFoodsLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/drinksLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Sea Foods"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/seaFoodsRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/drinksRight"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/seaFoodsLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+
+                        <TextView
+                            android:id="@+id/coffeesLeft"
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/seaFoodsLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Coffees"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/coffeesRight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/seaFoodsRight"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/coffeesLeft"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="0"
+                            android:textColor="@color/matteBlack"
+                            android:textSize="16dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/graphLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/salesMainLayout">
+
+                    <TextView
+                        android:visibility="visible"
+                        android:gravity="center"
+                        android:id="@+id/salesDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Below Graph shows how much sale is done on specified Date."
+                        android:textColor="@color/aqua"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/pieChartGraph"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_below="@+id/salesDescription"
+                        android:layout_marginTop="50dp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/saleEmpty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/salesMainLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="There is Zero Quantities"
+                    android:textColor="@color/red"
+                    android:visibility="gone"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/closeBTN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/middleLayout"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/main_button_bg"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Close"
+                android:textColor="@color/matteBlack"
+                android:textSize="21sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

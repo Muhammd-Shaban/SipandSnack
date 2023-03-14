@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineProvider="background"
+        android:outlineSpotShadowColor="@color/main_yellow"
+        card_view:cardBackgroundColor="@color/calmYellow"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="0dp"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/mainRL"
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp">
+
+            <Button
+                android:id="@+id/cancelBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/white"
+                android:text="Cancel"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAEEM"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/biorhyme_bold"
+                android:textColor="@color/matteBlack"/>
+
+
+            <LinearLayout
+                android:id="@+id/LL1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameTV"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/paymentTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Online"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LL2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL1"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/quantityTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/LL3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/LL2"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bill: "
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_bold"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/billTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1200"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dateTimeLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/LL3"
+                android:weightSum="2"
+                android:layout_marginTop="7dp">
+
+                <TextView
+                    android:id="@+id/timeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time : "
+                    android:textSize="16sp"
+                    android:layout_marginRight="4dp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:layout_weight="1"
+                    android:textColor="@color/matteBlack"/>
+
+                <TextView
+                    android:id="@+id/dateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date : "
+                    android:layout_marginRight="4dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/biorhyme_regular"
+                    android:layout_weight="1"
+                    android:textColor="@color/matteBlack"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

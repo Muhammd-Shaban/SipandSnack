@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/top1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="@string/profile"
+            android:icon="@drawable/unblock_employee" />
+
+        <item
+            android:id="@+id/nav_popular"
+            android:title="@string/popular"
+            android:icon="@drawable/ic_popular" />
+
+        <item
+            android:id="@+id/nav_change_password"
+            android:title="@string/change_pwd"
+            android:icon="@drawable/ic_password" />
+
+        <item
+            android:id="@+id/nav_online_payments"
+            android:title="@string/payment_details"
+            android:icon="@drawable/ic_payment" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/top2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_reports"
+            android:title="@string/reportsByUsers"
+            android:icon="@drawable/ic_report" />
+
+
+        <item
+            android:id="@+id/nav_feedbacks"
+            android:title="@string/feedbacks"
+            android:icon="@drawable/ic_feedback" />
+
+
+        <item
+            android:id="@+id/nav_about_app"
+            android:title="@string/about_application"
+            android:icon="@drawable/aboutapp" />
+
+
+
+        <item
+            android:id="@+id/nav_contactDev"
+            android:title="@string/contact_developer"
+            android:icon="@drawable/developericon" />
+
+    </group>
+
+
+    <group
+        android:id="@+id/top3"
+        android:checkableBehavior="none">
+
+            <item
+                android:id="@+id/nav_logout"
+                android:title="@string/logout_menu"
+                android:icon="@drawable/logout_icon" />
+
+    </group>
+
+</menu>
